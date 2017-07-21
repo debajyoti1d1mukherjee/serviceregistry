@@ -1,5 +1,6 @@
 FROM java:8
 VOLUME /tmp
+RUN sh -c 'pwd'
 ADD serviceregistry-0.0.1-SNAPSHOT.jar serviceregistry-0.0.1-SNAPSHOT.jar
 RUN sh -c 'touch /serviceregistry-0.0.1-SNAPSHOT.jar'
 ENV JAVA_OPTS=""
